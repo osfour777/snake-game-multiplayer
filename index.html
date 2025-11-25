@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Snake Multiplayer + Voice + Fruit + Retry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Snake Multiplayer Online</h1>
+
+  <div id="nameInputArea" class="box">
+    <h2>Enter Player Name</h2>
+    <input id="playerName" maxlength="20">
+    <button onclick="submitName()">Join Game</button>
+  </div>
+
+  <div id="gameArea" style="display:none;">
+    <div id="status"></div>
+    <canvas id="game" width="600" height="300"></canvas>
+
+    <button id="startVoice">Start Voice</button>
+    <button id="stopVoice">Stop Voice</button>
+    <button id="retry">Retry</button>
+
+    <h2>Leaderboard</h2>
+    <div id="leaderboard"></div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
